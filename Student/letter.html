@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+	<title>Composing an email</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="container">
+		<form action="mailto:rahurabh@gmail.com"
+method="POST" enctype="multipart/form-data">
+			<h3>Compose your email</h3>
+			<input type="text" id="name" placeholder="Your Name" required>
+			<input type="email" id="email" placeholder="Sender's Email id" required>
+			<!--<input type="email" id="email2" placeholder="Receiver's Email id" required>-->
+			<input type="text" id="admissionno" placeholder="Admission No" required>
+			<textarea id="message" rows="10" placeholder="Compose Your email"></textarea>
+			<button type="submit">Submit</button>
+		</form>	
+
+	</div>
+	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+	<script>
+		// function {
+		// 	Email.send({
+		// 	    Host : "smtp.gmail.com",
+		// 	    Username : "ral.kum1998@gmail.com",
+		// 	    Password : "gmail@@1998",
+		// 	    To : 'ral.kum1998@gmail.com'
+		// 	    From : document.getElementById(",email").value,
+		// 	    Subject : "Composing a Letter",
+		// 	    Body : "Name: " + document.getElementById("name").value +
+		// 	    "<br> Email: " + document.getElementById("email").value +
+		// 	    "<br> Admission No: " + document.getElementById("admissionno").value +
+		// 	    "<br> message: " + document.getElementById("message").value
+		// 	}).then(
+		// 	  message => alert(message)
+		// 	);
+		// }
+
+	</script>
+</body>
